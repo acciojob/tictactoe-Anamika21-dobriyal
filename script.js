@@ -44,7 +44,7 @@ function checkWinner(player1, player2) {
     for (const combination of winningCombinations) {
         const [a, b, c] = combination;
         if (cells[a].textContent && cells[a].textContent === cells[b].textContent && cells[a].textContent === cells[c].textContent) {
-            const winner = cells[a].textContent === 'X' ? player1 : player2;
+            const winner = cells[a].textContent === 'x' ? player1 : player2;
             document.querySelector('.message').textContent = `${winner} congratulations you won!`;
             
             // Disable further clicks on the board
